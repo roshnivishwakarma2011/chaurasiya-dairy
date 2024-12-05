@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaurasiya Dairy</title>
+    <link rel="stylesheet" href="style3.css">
+    <script src="script.js" defer></script>
+    
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Chaurasiya Dairy</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section with Menu -->
+    <section id="menu">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="product">
+                <h3>Cow Milk</h3>
+                <p>Fresh and pure cow milk</p>
+                <button onclick="orderProduct('Cow Milk')">Order Now</button>
+            </div>
+            <div class="product">
+                <h3>Buffalo Milk</h3>
+                <p>Rich and creamy buffalo milk</p>
+                <button onclick="orderProduct('Buffalo Milk')">Order Now</button>
+            </div>
+            <div class="product">
+                <h3>Malai</h3>
+                <p>Fresh cream from our milk</p>
+                <button onclick="orderProduct('Malai')">Order Now</button>
+            </div>
+            <div class="product">
+                <h3>Panner</h3>
+                <p>Freshly made paneer from pure milk</p>
+                <button onclick="orderProduct('Paneer')">Order Now</button>
+            </div>
+            <div class="product">
+                <h3>Lassi</h3>
+                <p>Refreshing yogurt drink</p>
+                <button onclick="orderProduct('Lassi')">Order Now</button>
+            </div>
+            <div class="product">
+                <h3>Ghee</h3>
+                <p>Pure homemade ghee</p>
+                <button onclick="orderProduct('Ghee')">Order Now</button>
+            </div>
+            <div class="product">
+                <h3>Dahi</h3>
+                <p>Fresh curd made daily</p>
+                <button onclick="orderProduct('Dahi')">Order Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Address Section -->
+    <section id="address">
+        <div class="container">
+            <h3>Our Address:</h3>
+            <p>Om Shanti Niwas, Rajawali Road, Naigaon East</p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contactForm" onsubmit="submitForm(event)">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Dynamic Order Section -->
+    <section id="orderSection">
+        <div class="container">
+            <h2>Your Orders</h2>
+            <ul id="orderList">
+                <!-- Dynamic order items will appear here -->
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
